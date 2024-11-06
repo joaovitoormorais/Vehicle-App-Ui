@@ -6,7 +6,7 @@ export const permissionGuard: CanActivateFn = (route, state) => {
 
   const router: Router = inject(Router)
 
-  const hasPermission = false //false
+  const hasPermission = true //false
 
   console.log("Entrou no guard do permissionamento")
 
