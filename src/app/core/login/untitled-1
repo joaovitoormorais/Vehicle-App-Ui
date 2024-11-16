@@ -1,0 +1,6 @@
+1. Adicionar no modulo o ReactiveFormModule
+2. Adicionar no modulo os Modulos do Angular Material (input, form field e button)
+3. Criar variaveis de FormControl para controlar os campos do formulario
+4. Alterar o código prebuilt do material para atender os nossos campos do formulario
+5. Tratamento de erros
+6. Submit dos campos

@@ -5,7 +5,10 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CoreRoutingModule } from './core-routing.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -13,11 +16,15 @@ import { CoreRoutingModule } from './core-routing.module';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     CommonModule,
-    CoreRoutingModule
+    CoreRoutingModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule
   ]
 
 })

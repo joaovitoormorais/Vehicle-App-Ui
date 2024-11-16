@@ -11,7 +11,7 @@ import { VehicleDetailComponent } from './vehicle-detail/vehicle-detail.componen
   declarations: [
     VehicleListComponent,
     VehicleRegisterComponent,
-    VehicleDetailComponent
+   VehicleDetailComponent,
   ],
   imports: [
     CommonModule,

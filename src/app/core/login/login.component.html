@@ -21,7 +21,50 @@
 <button (click)="navigateTo('/veiculo')">Ir para veiculo</button>
 
 
-<button routerLink="">Ainda em produção</button>
+<button routerLink="">Ir para veiculo</button>
+
+<br />
+	<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        
+        <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        
+        <input type="password" matInput [formControl]="passwordFormControl">
+        <mat-error *ngIf="passwordFormControl.hasError('minlength') && !passwordFormControl.hasError('required')">
+            Please enter a password with 5 chars
+          </mat-error>
+          <mat-error *ngIf="passwordFormControl.hasError('required')">
+            Please enter a valid password
+          </mat-error>
+
+    </mat-form-field>
+
+    <button mat-raised-button 
+        type="button" color="primary" 
+        [disabled]= "isFormInvalid()"
+        (click)="submit()" >Enviar</button>
+</form>
+
+<br>
 
 
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email:</mat-label>
+    <input matInput placeholder="Ex. Pizza" value="Sushi">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <textarea matInput placeholder="Ex. 345678.."></textarea>
+  </mat-form-field>
+</form>
 
