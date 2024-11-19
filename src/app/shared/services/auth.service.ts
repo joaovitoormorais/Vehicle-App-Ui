@@ -5,31 +5,28 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  private isAuth: boolean = false
+  private isAuth: boolean = false;
+  
 
   constructor() { }
 
-  public getIsAuth(): boolean {
-    return this.isAuth
+
+  public getIsAuth():boolean {
+    return this.isAuth;
   }
 
-  public login(loginRequest: {email: string; password: string}): void {
-    //logar o email e senha para o debug
-
-    const{email, password} = loginRequest;
+  public login({ email, password }: { email: string; password: string }): void {
+    // Printar no log para depuração
     console.log({
       email,
-      password,
-
-    }
-
-    );
-    this.isAuth = true
+      password
+    });
   }
 
   public logout(): void {
-    this.isAuth = false;
-    console.log('Usuário desconectado.')
-  }
+    this.isAuth = false; // Exemplo de implementação para logout
+    console.log('Usuário deslogado');
+
+}
 
 }

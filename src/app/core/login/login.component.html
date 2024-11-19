@@ -1,5 +1,5 @@
-<p>login works!</p> 
-
+<p>login works!</p>  //essa página será responsável para o usuário fazer o login e poder
+                    //acessar as rotas do nosso sistema
 <nav>
     <a></a>
 </nav>
@@ -49,22 +49,27 @@
 
     <button mat-raised-button 
         type="button" color="primary" 
-        [disabled]= "isFormInvalid()"
+        [disabled]= "IsFormInvalid"
         (click)="submit()" >Enviar</button>
 </form>
 
 <br>
 
-
 <form class="example-form">
   <mat-form-field class="example-full-width">
+    <mat-label>Nome Completo:</mat-label>
+    <input matInput placeholder="Ex. Alfredo Silva dos Santos" value="Rogério">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
     <mat-label>Email:</mat-label>
-    <input matInput placeholder="Ex. Pizza" value="Sushi">
+    <input matInput placeholder="Ex.antoniopereira08@yahoo.com..." value = Sei la>
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
     <mat-label>Password</mat-label>
-    <textarea matInput placeholder="Ex. 345678.."></textarea>
+    <input matInput placeholder="Ex.12345" value="abcde">
   </mat-form-field>
 </form>
+
 
