@@ -1,7 +1,7 @@
-<p>login works!</p>  //essa página será responsável para o usuário fazer o login e poder
-                    //acessar as rotas do nosso sistema
+<p>login works!</p> //essa página será responsável para o usuário fazer o login e poder
+//acessar as rotas do nosso sistema
 <nav>
-    <a></a>
+  <a></a>
 </nav>
 <div>{{urlVehicle}}</div>
 
@@ -24,33 +24,30 @@
 <button routerLink="">Ir para veiculo</button>
 
 <br />
-	<form class="example-form">
-    <mat-form-field class="example-full-width">
-        <mat-label>Email</mat-label>
-        
-        <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
-        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-          Please enter a valid email address
-        </mat-error>
-    </mat-form-field>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
 
-    <mat-form-field class="example-full-width">
-        <mat-label>Password</mat-label>
-        
-        <input type="password" matInput [formControl]="passwordFormControl">
-        <mat-error *ngIf="passwordFormControl.hasError('minlength') && !passwordFormControl.hasError('required')">
-            Please enter a password with 5 chars
-          </mat-error>
-          <mat-error *ngIf="passwordFormControl.hasError('required')">
-            Please enter a valid password
-          </mat-error>
+    <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+  </mat-form-field>
 
-    </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
 
-    <button mat-raised-button 
-        type="button" color="primary" 
-        [disabled]= "IsFormInvalid"
-        (click)="submit()" >Enviar</button>
+    <input type="password" matInput [formControl]="passwordFormControl">
+    <mat-error *ngIf="passwordFormControl.hasError('minlength') && !passwordFormControl.hasError('required')">
+      Please enter a password with 5 chars
+    </mat-error>
+    <mat-error *ngIf="passwordFormControl.hasError('required')">
+      Please enter a valid password
+    </mat-error>
+
+  </mat-form-field>
+
+  <button mat-raised-button type="button" color="primary" [disabled]="IsFormInvalid" (click)="submit()">Enviar</button>
 </form>
 
 <br>
@@ -63,7 +60,7 @@
 
   <mat-form-field class="example-full-width">
     <mat-label>Email:</mat-label>
-    <input matInput placeholder="Ex.antoniopereira08@yahoo.com..." value = Sei la>
+    <input matInput placeholder="Ex.antoniopereira08@yahoo.com..." value=Sei la>
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
@@ -71,5 +68,3 @@
     <input matInput placeholder="Ex.12345" value="abcde">
   </mat-form-field>
 </form>
-
-

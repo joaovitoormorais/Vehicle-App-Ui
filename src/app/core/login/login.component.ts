@@ -16,7 +16,9 @@ export class LoginComponent {
     private authService: AuthService
   )
 
-  {}
+  {
+     
+  }
 
   public urlVehicle: string | any[] | null | undefined = "/veiculo"
 

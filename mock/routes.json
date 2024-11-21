@@ -1,0 +1,16 @@
+{
+    "/users*": "/600/users$1",
+    "/vehicles*": "/660/vehicles$1",
+    "/customers*": "/660/customers$1"
+  }
+  
+  ----- package.json
+  
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "watch": "ng build --watch --configuration development",
+      "test": "ng test",
+      "mock": "npx json-server-auth mock/db.json -r mock/routes.json"
+    },
